@@ -1,0 +1,145 @@
+header{
+    
+    background-color:rgb(50 141 193);
+    color: white;
+    font-size: 4rem;
+    padding: 2rem 2rem 2rem 1rem;
+    font-family: "Nunito Sans",sans-serif;
+    /* padding-top,right,bottom,left*/
+
+    /*REM - Relative to font-size of root element*/
+}
+body{
+    
+    font-size: 1.2rem;
+    margin: 0rem;
+}
+.Navigation-Menu{
+    background-color: rgb(54, 53, 53);
+    overflow: hidden;
+    
+    
+}
+.Navigation-Menu a{
+    float:left;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Nunito Sans",sans-serif;
+}
+.image{
+    float: right;
+    margin-top: 0.6rem;
+    margin-right: 2.0rem;
+    
+}
+.news{
+    border: black;
+    border-style:solid;
+    width: fit-content;
+    margin: 2.5rem 2.0rem 2.0rem 4.0rem;
+    padding: 1.5rem;
+    border-width: 0.1rem;
+    font-size: 1.2rem;
+    font-family: "Nunito Sans",sans-serif;
+}
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+ul.news_details{
+    text-indent: -3rem;
+    font-weight: 500;
+    font-family: "Nunito Sans",sans-serif;
+}
+    
+
+ul.news_details>li::before{
+    content: "-";
+    text-indent: -3rem;
+}
+h3{
+    margin:0.5rem;
+    padding-top: 0rem;
+    
+
+}
+.description{
+    margin: 4.0rem;
+    padding-right:10.0rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Nunito Sans",sans-serif;
+}
+    /* 1 rem =16px
+    100% =16px
+    
+    font-size : 62.5%;
+    font-size : 10 px;
+    font-size : 1rem;
+    */
+    
+
+
+    /*
+    font-size :62.5 = 10px
+      now in 998px Devices 
+      font-size:55% = 8.8px
+    */
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 280px) and (max-width: 500px) {
+    .description{
+        padding-right:0rem;
+        font-size: 120%;
+    }
+    html{
+        font-size:50%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+    .description
+    {
+        justify-content: center;
+        font-size: 100%;
+    }
+    html{
+    font-size: 55%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html{
+        font-size: 65%;
+    }
+    .description{
+        font-size: 120%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 70%;
+    }
+    .description{
+        font-size: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html{
+        font-size:80%;
+    }
+    
+}
